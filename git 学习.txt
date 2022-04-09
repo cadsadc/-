@@ -5,20 +5,22 @@ git commit-m"message" ,完成: message 表示一个标志
 git status :可以查看工作区的状态
 git diff ：如果git status 告诉你有文件被修改过，就可以用 git diff 查看修改内容
 HEAD : 表示指向的版本为当前版本
-git reset --hard commit_id:   这个id就是要退回的版本的id
+git reset --hard commit_id:   这个commot_ id就是要退回的版本的id 可以通过 git reflog 查询历史的id
 git reset -- hard HEAD~n,退回到相对于当前版本的n个版本之前
 git log ：可以查历史的提交记录，以便确定退回的版本
 git reflog：用于查看命令历史，可以查看所有的记录
-      工作区的文件通过add 进入暂存区   git commit 把在暂存区的文件提交到当前分支
 
+      工作区的文件通过add 进入暂存区   git commit 把在暂存区的文件提交到当前分支
 git checkout -- fileName    : 可以直接丢弃正在工作区修改
 git reset HEAD  fileName：  可以撤销把在暂存区的文件退回工作区 ，然后可以通过 checkout进行丢弃修改操作
 git rm file  用于删除文件名为file的文件
 git remote add origin 网址.git  要关联一个远程库时必须给远程库指定一个名字，oringin是默认习惯命名；
-git push-u origin master  第一次推送master中的所有内容 ；此后每次提交只要有必要都可以用该命令推送最新的修改
+git push -u origin master  第一次推送master中的所有内容 ；此后每次提交只要有必要都可以用该命令推送最新的修改
+
 远程仓库
 可以先创建远程库，然后再从远程库克隆   通过
    git clone  wangzhi.git   如果有问题的话可以取消http 或者 https的代理
+
 分支管理 
               git branch 查看分支
               git branch  <name> 创建分支 
