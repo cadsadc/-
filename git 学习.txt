@@ -28,3 +28,5 @@ git push -u origin master  第一次推送master中的所有内容 ；此后每�
 	    git checkout -b <name>  or  git switch -c <name>  创建+切换分支
  	    git merge <name>合并某分支到当前分支
 	    git branch -d<name>删除分支
+     当git分支无法自动合并时，就必须首先解决冲突，然后再提交，合并完成
+         git log--graph 可以看到分支合成图
